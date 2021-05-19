@@ -10,12 +10,19 @@ function convertFahrToCelsius(fahrenheit) {
     if (Array.isArray(fahrenheit)) {
         console.log(`[${fahrenheit}] is not a valid number but a/an Array`);
     }
-    if (typeof fahrenheit === 'object'){
+    if (typeof fahrenheit === 'object') {
         let value = JSON.stringify(fahrenheit);
         console.log(`[${fahrenheit}] is not a valid number but a/an object.`)
     };
 }
+convertFahrToCelsius(0);
 convertFahrToCelsius("0");
 convertFahrToCelsius([1, 3, 4, 5]);
-convertFahrToCelsius({ obj: 1});
+convertFahrToCelsius({ temp: 0 })
 
+
+/*Write a function named "checkYuGiOh" that takes a number, n, as an argument, creates an array of numbers from 1 to n and replaces multiples of 2, 3, and 5 with "yu", "gi" and "oh", then returns the resulting array. */
+
+function checkYuGiOh(n) {
+
+}
